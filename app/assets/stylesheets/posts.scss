@@ -1,0 +1,78 @@
+@font-face {
+  font-family:"Shadows Into Light";
+  src: url('/assets/Shadows_Into_Light');
+  font-family: "Julius Sans";
+  src: url('/assets/JuliusSansOne-Regular');
+}
+
+html {
+	margin-left: -35px;
+	margin-right: -35px;
+}
+
+#page_header {
+	background-color: white;
+}
+
+#page_header h1 {
+	font-family: "Julius Sans", sans-serif;
+	color: black;
+	padding: 10px;
+	text-align: center;
+	font-size: 5em;
+	-webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+
+
+#panel_image  img {
+	width: 100%;
+
+}
+
+#btns {
+	font-size: 15px;
+
+}
+
+@-webkit-keyframes pulsate {
+    
+    0% {
+    	opacity: 0.5;
+    }
+
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+#post-table {
+	display: flex;
+	flex: wrap;
+	justify-content: left;
+	align-items: left;
+
+}
+
+.posts{
+	margin: 35px;
+	padding: 10px;
+	font-family: "Julius Sans", sans-serif;
+	font-size: 1.5em;
+	background-color: white;
+	border-left: 5px solid black;
+	width: 5000px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+
+}
+
+.outcome {
+	padding: 35px;
+}
+
+

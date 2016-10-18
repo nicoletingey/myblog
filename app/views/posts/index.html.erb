@@ -1,0 +1,42 @@
+<div id="page_header">
+  <h1>Coco Marie Tingey</h1>
+</div>
+
+<div id="panel_image">
+  <%= image_tag("IMG_8187.jpg") %>
+</div>
+
+
+<div>
+<body>
+
+<p id="notice"><%= notice %></p>
+
+<div id= "post-table">
+<div class = 'posts'>
+    <% @posts.each do |post| %>
+      <tr>
+        <div class= "outcome">
+        <td><%= post.Title %></td>
+        </div>
+        <div class= "outcome">
+        <td><%= post.Date %></td>
+        </div>
+        <div class="outcome">
+        <td><%= post.Text %></td>
+        </div>
+      <div id="btns"> 
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </div>
+      </tr>
+    <% end %>
+</div>
+</div>
+
+<br>
+</body>
+</div>
+
+<%= link_to 'New Post', new_post_path %>
